@@ -1,0 +1,189 @@
+title: 'Content blocks'
+fields:
+  -
+    handle: content_blocks
+    field:
+      collapse: false
+      previews: true
+      sets:
+        logo_overview:
+          display: 'Logo overview'
+          fields:
+            -
+              handle: title
+              field:
+                input_type: text
+                antlers: false
+                display: Title
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                validate:
+                  - required
+                instructions: 'Add a title to this content block'
+            -
+              handle: logo_overview
+              field:
+                fields:
+                  -
+                    handle: logo
+                    field:
+                      mode: list
+                      container: assets
+                      restrict: false
+                      allow_uploads: true
+                      show_filename: true
+                      display: Logo
+                      type: assets
+                      icon: assets
+                      instructions: 'For best result use an SVG with a horizontal aspect ratio'
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                      validate:
+                        - required
+                      max_files: 1
+                mode: stacked
+                max_rows: 4
+                reorderable: true
+                display: 'Logo overview'
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              import: content_blocks_anchor
+        feature_overview:
+          display: 'Feature overview'
+          fields:
+            -
+              import: content_block_headline
+            -
+              handle: features
+              field:
+                mode: default
+                create: true
+                collections:
+                  - features
+                display: Features
+                type: entries
+                icon: entries
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              import: content_blocks_anchor
+        testimonial_overview:
+          display: 'Testimonial overview'
+          fields:
+            -
+              import: content_block_headline
+            -
+              handle: testimonials
+              field:
+                mode: default
+                create: true
+                collections:
+                  - testimonials
+                display: Testimonials
+                type: entries
+                icon: entries
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              import: content_blocks_anchor
+        text_and_form:
+          display: 'Text and form'
+          fields:
+            -
+              import: content_block_headline
+            -
+              handle: form
+              field:
+                max_items: 1
+                display: Form
+                type: form
+                icon: form
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                validate:
+                  - required
+            -
+              handle: thank_you_notification
+              field:
+                input_type: text
+                antlers: false
+                display: 'Thank you notification'
+                type: text
+                icon: text
+                instructions: 'This message is show when the form is submitted as a notification'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                validate:
+                  - required
+            -
+              import: content_blocks_anchor
+        pricing_overview:
+          display: 'Pricing overview'
+          fields:
+            -
+              import: content_block_headline
+            -
+              handle: prices
+              field:
+                max_items: 3
+                mode: default
+                create: true
+                collections:
+                  - prices
+                display: Prices
+                type: entries
+                icon: entries
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              import: content_blocks_anchor
+        faq_overview:
+          display: 'FAQ overview'
+          fields:
+            -
+              import: content_block_headline
+            -
+              handle: faq_items
+              field:
+                mode: default
+                create: true
+                collections:
+                  - faq_items
+                display: 'FAQ items'
+                type: entries
+                icon: entries
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                validate:
+                  - sometimes
+            -
+              import: content_blocks_anchor
+        call_to_action:
+          display: 'Call to action'
+          fields:
+            -
+              import: content_block_headline
+            -
+              import: button
+            -
+              import: content_blocks_anchor
+      display: 'Content blocks'
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible

@@ -1,0 +1,23 @@
+{{ partial:components/frame background_color="bg-gray-50" :padding_top="padding_top" }}
+    <div class="container flex flex-col">
+        <div class="flex flex-col items-center">
+            {{ partial:components/heading as="h1" class="text-center" }}
+                {{ title }}
+            {{ /partial:components/heading }}
+            {{ if subtitle }}
+                <span
+                    class="block max-w-2xl mt-3 text-lg text-center text-gray-500"
+                >
+                    {{ subtitle }}
+                </span>
+            {{ /if }}
+        </div>
+        {{ if testimonials }}
+            <div class="gap-6 mt-12 columns-1 sm:columns-2 lg:columns-3">
+                {{ testimonials }}
+                    {{ partial:components/testimonial_card }}
+                {{ /testimonials }}
+            </div>
+        {{ /if }}
+    </div>
+{{ /partial:components/frame }}

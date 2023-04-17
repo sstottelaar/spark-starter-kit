@@ -1,0 +1,7 @@
+<title>{{ seo_title ?? title }}</title>
+<meta name="description" content="{{ meta_description }}" />
+
+<meta property="og:title" content="{{ seo_title ?? title }}" />
+<meta property="og:description" content="{{ meta_description }}" />
+
+<meta property="og:image" content="{{ og_image | get:permalink }}" />

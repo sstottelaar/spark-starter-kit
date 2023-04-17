@@ -1,0 +1,19 @@
+title: Settings
+data:
+  button_group:
+    -
+      id: lgia8vhk
+      button_label: 'Start free trial'
+      button_link: /register
+      button_variant: white
+      small: false
+    -
+      id: lgia9hlt
+      button_label: Login
+      button_link: /login
+      button_variant: white_outline
+      small: false
+  github_link: 'http://www.github.com'
+  twitter_link: 'https://twitter.com'
+  linkedin_link: 'https://www.linkedin.com'
+  copyright_text: '© 2023 Spark CRM. All rights reserved.'

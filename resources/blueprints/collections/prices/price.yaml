@@ -1,0 +1,68 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Title
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          input_type: text
+          antlers: false
+      -
+        handle: price
+        field:
+          input_type: text
+          antlers: false
+          display: Price
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: subtitle
+        field:
+          antlers: false
+          display: Subtitle
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: benefits
+        field:
+          display: Benefits
+          type: list
+          icon: list
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        import: button
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - prices
+          max_items: 1
+          listable: false
+          localizable: true
+title: Price

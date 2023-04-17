@@ -1,0 +1,18 @@
+{{ if label }}
+    <{{ as or 'a' }}
+        {{ if to }}
+            href="{{ to }}"
+        {{ /if }}
+        class="
+            flex items-center py-3 rounded leading-none border font-semibold
+            {{ if size == "small" }} px-3 py-[10px] lg:text-[15px] {{ else }} px-4 lg:py-[14px] lg:px-[18px] lg:rounded-lg  {{ /if}}
+            {{ if variant == "white" }} text-blue-600 bg-white border-white {{ /if }}
+            {{ if variant == "white_outline" }} text-white bg-transparent border-white  {{ /if }}
+            {{ if variant == "light_blue" }} text-blue-600 bg-blue-50 border-blue-50  {{ /if }}
+            {{ if variant == "blue" }} text-white bg-blue-500 border-blue-500  {{ /if }}
+            {{ class }}
+        "
+    >
+        {{ label }}
+    </{{ as or 'a' }}>
+{{ /if }}

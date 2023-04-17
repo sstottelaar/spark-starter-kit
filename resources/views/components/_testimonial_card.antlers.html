@@ -1,0 +1,35 @@
+<div
+    class="inline-block p-6 mt-6 space-y-5 bg-white border border-gray-200 rounded-lg lg:p-8"
+>
+    <div class="font-medium leading-relaxed text-gray-500">
+        {{ testimonial_text }}
+    </div>
+    <div class="flex">
+        <div class="flex items-center space-x-3">
+            <div
+                class="flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-300 rounded-full"
+            >
+                {{ if author_avatar }}
+                    <img
+                        src="{{ glide:author_avatar quality="100" w="80" h="80" fit="crop_focal" }}"
+                        alt="{{ author_avatar:alt }}"
+                        class="object-cover object-center w-10 h-10"
+                        width="40px"
+                        height="40px"
+                        loading="lazy"
+                    />
+                {{ else }}
+                    <i icon-name="user" class="text-white"></i>
+                {{ /if }}
+            </div>
+            <div class="flex flex-col gap-px leading-tight flex-gap">
+                <div class="text-sm font-semibold text-gray-700">
+                    {{ title }}
+                </div>
+                <div class="text-xs font-medium text-gray-500">
+                    {{ job_title }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

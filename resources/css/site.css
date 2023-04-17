@@ -1,0 +1,32 @@
+.hero-stripe {
+    background: linear-gradient(90deg, #0000 calc(100% - 1px), #fff 0);
+    background-size: calc((100% - 5 * 5px) / 12 + 5px) 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-stripe {
+        background-size: calc((100% - 5 * 5px) / 16 + 5px) 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero-stripe {
+        background-size: calc((100% - 5 * 5px) / 24 + 5px) 100%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-stripe {
+        background-size: calc((100% - 5 * 5px) / 28 + 5px) 100%;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .hero-stripe {
+        background-size: calc((100% - 5 * 5px) / 42 + 5px) 100%;
+    }
+}
+
+.honeypot {
+    display: none;
+}

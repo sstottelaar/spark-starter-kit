@@ -1,0 +1,11 @@
+<{{ as or 'h1' }}
+    class="
+        font-heading font-bold
+        {{ if as == "h1" }} text-2xl lg:text-3xl text-gray-800 {{ /if}}
+        {{ if as == "h2" }} text-lg sm:text-xl text-gray-800  {{ /if }}
+        {{ if as == "h3" }} text-lg sm:text-xl text-gray-800  {{ /if }}
+        {{ class }}
+    "
+>
+    {{ slot }}
+</{{ as or 'h1' }}>

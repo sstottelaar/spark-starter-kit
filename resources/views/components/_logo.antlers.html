@@ -1,0 +1,13 @@
+<a class="flex items-center" href="{{ site:url }}" title="{{ site:name }}">
+    <img
+        {{ if variant == "white" }}
+            src="./visuals/logo-white.svg"
+        {{ else }}
+            src="./visuals/logo.svg"
+        {{ /if }}
+        class="h-auto {{ class }}"
+        alt="{{ site:name }}"
+        width="120"
+        height="39"
+    />
+</a>

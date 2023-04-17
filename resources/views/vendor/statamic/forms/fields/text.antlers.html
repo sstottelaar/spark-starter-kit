@@ -1,0 +1,11 @@
+<input
+    type="{{ input_type ?? 'text' }}"
+    name="{{ handle }}"
+    value="{{ value }}"
+    {{ if placeholder }}placeholder="{{ placeholder }} {{ if validate|contains:required }}*{{ /if }}"{{ /if }}
+    {{ if character_limit }}maxlength="{{ character_limit }}"{{ /if }}
+    {{ if js_driver }}{{ js_attributes }}{{ /if }}
+    {{ if validate|contains:required }}required{{ /if }}
+    size="1"
+    class="w-full h-full py-2 pl-1 font-medium text-white bg-transparent border-0 focus:outline-none focus:ring-0 placeholder:text-white/80 placeholder:font-medium"
+/>

@@ -1,0 +1,26 @@
+title: 'Content block headline'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      validate:
+        - required
+  -
+    handle: subtitle
+    field:
+      input_type: text
+      antlers: false
+      display: Subtitle
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible

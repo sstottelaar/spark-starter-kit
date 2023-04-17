@@ -1,0 +1,31 @@
+<div
+    class="container relative z-40 flex flex-col items-center flex-grow pt-12 2xl:pt-20"
+>
+    <h1
+        class="max-w-md px-2 text-3xl font-bold text-center text-white lg:max-w-xl lg:text-5xl font-heading"
+    >
+        {{ hero_title }}
+    </h1>
+
+    <p class="max-w-[480px] mt-6 lg:text-lg font-medium text-center text-white">
+        {{ hero_text }}
+    </p>
+
+    <div class="flex gap-4 mt-6">
+        {{ button_group }}
+            {{ partial:components/button :label="button_label" :variant="button_variant" :size="button_size" :to="button_link" }}
+        {{ /button_group }}
+    </div>
+
+    <picture
+        class="block lg:w-10/12 xxl:w-8/12 max-w-6xl mt-12 lg:mt-16 xxl:mt-20 aspect-[3/1.5] overflow-hidden max-h-[500px] shadow-2xl shadow-blue-900/50"
+    >
+        <img
+            src="{{ glide:hero_image quality="100" }}"
+            alt=""
+            class="object-cover w-full h-auto"
+            width="825"
+            height="460"
+        />
+    </picture>
+</div>

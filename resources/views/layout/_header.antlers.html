@@ -1,0 +1,20 @@
+<header
+    class="relative flex flex-col bg-blue-600 max-h-[90vh] xxl:max-h-[80vh] overflow-hidden"
+>
+    <div
+        class="container relative z-20 flex items-center justify-between pt-8 lg:pt-12"
+    >
+        {{ partial:components/logo variant="white" class="w-24 lg:w-[120px]" }}
+        <div class="flex items-center gap-9">
+            {{ partial:navigation/main_navigation class="text-blue-200" }}
+            <div class="flex items-center gap-4">
+                {{ settings:button_group }}
+                    {{ partial:components/button :label="button_label" :variant="button_variant" :size="button_size" :to="button_link" class="last:hidden last:sm:flex" }}
+                {{ /settings:button_group }}
+            </div>
+        </div>
+    </div>
+
+    {{ partial:components/hero_background }}
+    {{ partial:layout/hero }}
+</header>

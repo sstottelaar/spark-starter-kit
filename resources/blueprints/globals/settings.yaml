@@ -1,0 +1,71 @@
+sections:
+  settings:
+    display: Settings
+    fields:
+      -
+        handle: header
+        field:
+          display: Header
+          type: section
+          icon: section
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        import: button
+      -
+        handle: footer
+        field:
+          display: Footer
+          type: section
+          icon: section
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: github_link
+        field:
+          placeholder: 'https://'
+          input_type: text
+          antlers: false
+          display: 'Github link'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: twitter_link
+        field:
+          placeholder: 'https://'
+          input_type: text
+          antlers: false
+          display: 'Twitter link'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: linkedin_link
+        field:
+          placeholder: 'https://'
+          input_type: text
+          antlers: false
+          display: 'LinkedIn link'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: copyright_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Copyright text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible

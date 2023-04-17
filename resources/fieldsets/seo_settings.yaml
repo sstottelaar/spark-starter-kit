@@ -1,0 +1,38 @@
+title: 'SEO settings'
+fields:
+  -
+    handle: seo_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'SEO Title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: meta_description
+    field:
+      antlers: false
+      display: 'Meta description'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: og_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'OG image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      max_files: 1

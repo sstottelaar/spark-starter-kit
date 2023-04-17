@@ -1,0 +1,27 @@
+<div x-data="{ expanded: false }" class="w-full">
+    <button
+        @click="expanded = !expanded"
+        class="flex items-center justify-between w-full py-5 text-left"
+    >
+        <span class="font-medium text-left text-gray-800">
+            {{ title }}
+        </span>
+
+        <i
+            x-show="!expanded"
+            class="w-5 h-5 text-gray-800"
+            icon-name="plus"
+        ></i>
+        <i
+            x-show="expanded"
+            class="w-5 h-5 text-gray-800"
+            icon-name="minus"
+        ></i>
+    </button>
+
+    <div x-cloak x-show="expanded" x-collapse>
+        <article class="mb-4 prose">
+            {{ answer }}
+        </article>
+    </div>
+</div>

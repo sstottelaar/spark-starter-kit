@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#2563EB" />
+
+        {{ partial:seo/meta }}
+        {{ vite src="resources/css/tailwind.css|resources/js/site.js" }}
+    </head>
+    <body class="antialiased scroll-smooth">
+        {{ template_content }}
+    </body>
+</html>

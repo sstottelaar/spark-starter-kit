@@ -1,0 +1,12 @@
+<div
+    x-show="showNotification"
+    class="fixed z-40 p-4 bg-white rounded shadow-2xl top-8 right-8"
+    x-data="{ showNotification: false }"
+    x-init="setTimeout(() => showNotification = true, 100), setTimeout(() => showNotification = false, 3000)""
+    x-cloak
+    x-transition.duration.400ms
+>
+    <span class="font-medium text-gray-800 ">
+        {{ slot }}
+    </span>
+</div>

@@ -1,0 +1,34 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Question
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          input_type: text
+          antlers: false
+      -
+        handle: answer
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Answer
+          type: markdown
+          icon: markdown
+          instructions: 'Markdown is supported'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+title: 'FAQ Item'

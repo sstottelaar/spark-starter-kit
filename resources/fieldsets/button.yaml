@@ -1,0 +1,77 @@
+title: 'Button group'
+fields:
+  -
+    handle: button_group
+    field:
+      fields:
+        -
+          handle: button_label
+          field:
+            input_type: text
+            antlers: false
+            display: 'Button label'
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            validate:
+              - required
+        -
+          handle: button_link
+          field:
+            display: 'Button link'
+            type: link
+            icon: link
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            validate:
+              - required
+        -
+          handle: button_variant
+          field:
+            options:
+              white: White
+              white_outline: 'White outline'
+              light_blue: 'Light blue'
+              blue: Blue
+            multiple: false
+            max_items: 2
+            clearable: false
+            searchable: true
+            taggable: false
+            push_tags: false
+            cast_booleans: false
+            display: 'Button variant'
+            type: select
+            icon: select
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            validate:
+              - required
+            instructions: 'Choose how the buttons should look'
+        -
+          handle: small
+          field:
+            default: false
+            display: Small
+            type: toggle
+            icon: toggle
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            validate:
+              - required
+            instructions: 'Check if you want to display a small button'
+      mode: table
+      max_rows: 2
+      reorderable: true
+      display: 'Button group'
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      instructions: 'Create a button group with up to two buttons'

@@ -1,0 +1,23 @@
+{{ partial:components/frame background_color="bg-gray-50" :padding_top="padding_top" }}
+    <div class="container flex flex-col">
+        <div class="flex flex-col">
+            {{ partial:components/heading as="h1" }}
+                {{ title }}
+            {{ /partial:components/heading }}
+            {{ if subtitle }}
+                <span class="block mt-2 text-lg text-gray-500">
+                    {{ subtitle }}
+                </span>
+            {{ /if }}
+        </div>
+        {{ if features }}
+            <div
+                class="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-3"
+            >
+                {{ features }}
+                    {{ partial:components/feature_card }}
+                {{ /features }}
+            </div>
+        {{ /if }}
+    </div>
+{{ /partial:components/frame }}

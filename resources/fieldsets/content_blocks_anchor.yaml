@@ -1,0 +1,14 @@
+title: 'Content blocks anchor'
+fields:
+  -
+    handle: anchor
+    field:
+      input_type: text
+      antlers: false
+      display: Anchor
+      type: text
+      icon: text
+      instructions: "Fill out an anchor so that it's possible to link to in the navigation, for example *pricing*"
+      listable: hidden
+      instructions_position: above
+      visibility: visible

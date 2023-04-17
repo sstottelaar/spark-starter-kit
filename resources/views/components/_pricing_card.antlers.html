@@ -1,0 +1,42 @@
+<div
+    class="flex flex-col p-5 rounded-lg even:border even:border-white even:bg-white odd:opacity-90 lg:p-9 group odd:translate-y-4"
+>
+    <span
+        class="text-2xl font-bold group-even:text-gray-900 group-odd:text-gray-300 lg:text-3xl font-heading"
+    >
+        {{ price }}
+    </span>
+    <span
+        class="block mt-5 text-xl font-semibold group-even:text-gray-900 group-odd:text-gray-300"
+    >
+        {{ title }}
+    </span>
+
+    <p
+        class="mt-5 font-medium group-even:text-gray-500 group-odd:text-gray-300"
+    >
+        {{ subtitle }}
+    </p>
+    {{ if benefits }}
+        <ul class="mt-5 space-y-4">
+            {{ benefits }}
+                <li
+                    class="flex items-baseline gap-3 lg:items-center group-even:text-gray-800 group-odd:text-gray-300"
+                >
+                    <i
+                        icon-name="check-circle"
+                        class="w-[18px] h-[18px] translate-y-1 lg:translate-y-0 flex-shrink-0"
+                    ></i>
+                    <span>{{ value }}</span>
+                </li>
+            {{ /benefits }}
+        </ul>
+    {{ /if }}
+    {{ if button_group }}
+        <div class="inline-flex mt-8">
+            {{ button_group }}
+                {{ partial:components/button :label="button_label" :variant="button_variant" :to="button_link" }}
+            {{ /button_group }}
+        </div>
+    {{ /if }}
+</div>

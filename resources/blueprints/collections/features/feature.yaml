@@ -1,0 +1,43 @@
+sections:
+  Feature:
+    display: Feature
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          input_type: text
+          antlers: false
+      -
+        handle: icon
+        field:
+          input_type: text
+          antlers: false
+          display: Icon
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+          instructions: 'Pick an icon from Lucide, check [the docs](https://lucide.dev/icons)'
+      -
+        handle: content
+        field:
+          antlers: false
+          display: Content
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+title: Feature

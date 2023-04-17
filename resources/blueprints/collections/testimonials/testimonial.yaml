@@ -1,0 +1,77 @@
+sections:
+  testimonial:
+    display: Testimonial
+    fields:
+      -
+        handle: author_info
+        field:
+          display: 'Author info'
+          type: section
+          icon: section
+          instructions: 'Fill out the info about the author'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: 'Author name'
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          input_type: text
+          antlers: false
+      -
+        handle: job_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Job title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: author_avatar
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Author avatar'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: testimonial
+        field:
+          display: Testimonial
+          type: section
+          icon: section
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: testimonial_text
+        field:
+          antlers: false
+          display: 'Testimonial text'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+title: Testimonial
