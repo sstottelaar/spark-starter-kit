@@ -1,5 +1,5 @@
 {
-    "name": "my-vendor-name/spark-starter-kit",
+    "name": "sstottelaar/spark-starter-kit",
     "extra": {
         "statamic": {
             "name": "Spark Starter Kit",
