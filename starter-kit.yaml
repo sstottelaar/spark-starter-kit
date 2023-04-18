@@ -4,11 +4,14 @@ export_paths:
   - config/statamic/assets.php
   - resources/blueprints
   - resources/css/site.css
+  - resources/js/modules
+  - resources/js/site.js
   - resources/views
   - resources/views/vendor
   - resources/fieldsets
   - resources/forms
   - public/assets
+  - public/visuals
   - public/css
   - package.json
   - tailwind.config.js
