@@ -5,7 +5,7 @@ title: Home
 template: home
 author: ea43382b-50cc-445f-8a83-b52d187f6f39
 updated_by: ea43382b-50cc-445f-8a83-b52d187f6f39
-updated_at: 1681744296
+updated_at: 1689107414
 hero_title: 'Save 2 hours of busy work every single day'
 hero_text: 'Automate your sales tasks: quotes, reminders, funnel management. Stop the boring work, start selling.'
 button_group:
@@ -123,6 +123,5 @@ content_blocks:
     enabled: true
 seo_title: 'Spark | Statamic Starter Kit'
 meta_description: 'Revolutionize your sales process with our CRM SaaS tool designed to save time and increase productivity for modern businesses. Discover our powerful features, flexible pricing, and exceptional support. Sign up for a free trial today!'
-og_image:
-  - website_frame_1x.webp
+og_image: website_frame_1x.webp
 ---
